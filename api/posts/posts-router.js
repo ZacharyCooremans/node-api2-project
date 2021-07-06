@@ -123,7 +123,7 @@ router.delete('/:id', async (req,res) => {
 })
 
 // [GET] comments by id
-router.get('/:id/messages'), async (req,res) => {
+router.get('/:id/comments'), async (req,res) => {
     try {
         const post = await Post.findById(req.params.id)
         if (!post) {
